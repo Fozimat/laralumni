@@ -37,7 +37,7 @@
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="\user">
             <i class="fas fa-fw fa-table"></i>
             <span>Data User</span></a>
     </li>
@@ -54,14 +54,14 @@
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="\laporan">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Laporan</span></a>
     </li>
 
     <!-- Nav Item - Tables -->
-    <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+    <li class="nav-item {{Request::segment(1) == ('agenda') ? 'active' : ''}}">
+        <a class="nav-link" href="\agenda">
             <i class="fas fa-fw fa-table"></i>
             <span>Agenda</span></a>
     </li>
@@ -78,14 +78,14 @@
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="\profil">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Edit Profil</span></a>
     </li>
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="\pesan">
             <i class="fas fa-fw fa-table"></i>
             <span>Pesan</span></a>
     </li>
@@ -99,7 +99,7 @@
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="\logout">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Logout</span></a>
     </li>

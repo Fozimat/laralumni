@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AgendaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,5 @@ Route::get('/alumni/{alumni}', [AlumniController::class, 'show']);
 Route::delete('/alumni/{alumni}', [AlumniController::class, 'destroy']);
 Route::get('/alumni/edit/{alumni}', [AlumniController::class, 'edit']);
 Route::patch('/alumni/{alumni}', [AlumniController::class, 'update']);
+
+Route::resource('/agenda', AgendaController::class);
